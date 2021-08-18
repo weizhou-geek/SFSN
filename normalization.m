@@ -9,6 +9,6 @@ function [Y,MAX_scale,MIN_scale]=normalization(X,lower,upper,MAX,MIN)
     MAX_scale=max(X);
 else
     for i=1:n
-     Y(:,i)=(X(:,i)-MIN(i))/(MAX(i)-MIN(i))*(upper-lower)+lower
+     Y(:,i)=(X(:,i)-MIN(i))/(MAX(i)-MIN(i))*(upper-lower)+lower;
     end
 end
